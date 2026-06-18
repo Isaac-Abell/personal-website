@@ -23,7 +23,6 @@ export const projects: Project[] = [
     ],
     technologies: ["Python", "SQL", "JavaScript", "React", "Docker", "GitHub Actions", "AWS"],
     links: {
-      live: "https://isaac-abell.github.io/find-commute-rentals-fe/",
       github: "https://github.com/Isaac-Abell/Find-Optimal-Commute-Rentals"
     }
   },
@@ -40,14 +39,27 @@ export const projects: Project[] = [
     }
   },
   {
-    title: "API & Website Monitoring Tool",
+    title: "Recursive Website Health Checker",
     description: [
-      "Developed a Go-based monitoring system that checks website availability and API performance concurrently, reporting results directly to a GitHub README and Actions workflow summary.",
-      "Uses headless Chrome to detect console errors, track response times, and run scheduled automated tests via GitHub Actions.",
+      "Built a concurrent web crawler in Go that recursively discovers site links, including JavaScript-rendered pages, and generates detailed health reports.",
+      "Added deep latency analysis, retry logic, and dependency graph visualization to make large sites easier to audit and debug.",
+      "Integrated headless Chrome support, infinite-scroll handling, and GitHub Actions automation for recurring health checks and report generation.",
     ],
-    technologies: ["Go", "GitHub Actions", "Chromedp"],
+    technologies: ["Go", "Chrome", "Mermaid", "GitHub Actions"],
     links: {
-      github: "https://github.com/Isaac-Abell/api-and-website-monitor"
+      github: "https://github.com/Isaac-Abell/recursive-website-health-checker"
+    }
+  },
+  {
+    title: "Hockey Season Outcome Predictor",
+    description: [
+      "Built a hockey data analysis pipeline that collects NHL, MoneyPuck, Hockey-Reference, and salary cap data into a single team-season feature table.",
+      "Engineered features covering roster demographics, turnover, scoring distribution, goalie performance, draft context, and schedule difficulty.",
+      "Trained and validated predictive models with cross-validation, then generated future season predictions and report charts from the resulting ensemble.",
+    ],
+    technologies: ["Python", "Scikit-learn", "numpy", "pandas"],
+    links: {
+      github: "https://github.com/Isaac-Abell/hockey-season-outcome-predictor"
     }
   },
   {

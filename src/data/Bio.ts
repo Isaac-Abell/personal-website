@@ -7,11 +7,11 @@ export const bioData: Bio = {
     highlights: [
         {
             label: "Education",
-            value: "BS. Computer Science, Statistics"
+            value: "BS. Data Science"
         },
         {
             label: "Interests",
-            value: "Building Things, Predictive Modeling, Mountain Biking, Skiing, Video Games"
+            value: "Building Things, Mountain Biking, Skiing, Video Games"
         }
     ]
 };

@@ -6,7 +6,6 @@
     width: 100%;
     height: 100%;
     pointer-events: none;
-    /* Let clicks pass through to 3D canvas where there's no UI */
     z-index: 10;
     display: flex;
     flex-direction: column;
@@ -57,32 +56,13 @@
 .nav-link:hover {
     color: var(--text-primary);
     background: rgba(255, 255, 255, 0.05);
-    /* Subtle glass highlight */
 }
 
 .nav-link.active {
     color: #000000;
     background: var(--text-primary);
-    /* High contrast active state */
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
 }
-
-.canvas-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-}
-
-/* Base styles for 3D HTML elements */
-.html-block {
-    color: var(--text-primary);
-    user-select: none;
-}
-
-/* --- Responsive Utility Classes --- */
 
 .section-container {
     display: flex;
@@ -108,26 +88,6 @@
     gap: 4rem;
 }
 
-.html-block-home {
-    width: 1200px;
-}
-
-.html-block-bio {
-    width: 800px;
-}
-
-.html-block-exp {
-    width: 1000px;
-    transform: scale(0.85);
-    transform-origin: center center;
-}
-
-.html-block-proj {
-    width: 1000px;
-    transform: scale(0.85);
-    transform-origin: top center;
-}
-
 /* Mobile Overrides */
 @media (max-width: 768px) {
     .navbar {
@@ -146,15 +106,6 @@
     .nav-link {
         font-size: 0.85rem;
         padding: 0.4rem 0.6rem;
-    }
-
-    /* Override widths for mobile screens (affects both 2D and 3D) */
-    .html-block-home,
-    .html-block-bio,
-    .html-block-exp,
-    .html-block-proj {
-        width: 350px !important;
-        transform: scale(1) !important;
     }
 
     .section-container {
@@ -176,12 +127,7 @@
         gap: 2rem !important;
     }
 
-    /* Re-size title text */
     .hero-name {
         font-size: 4rem !important;
-    }
-
-    .hero-title {
-        font-size: 1.2rem !important;
     }
 }

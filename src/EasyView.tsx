@@ -6,7 +6,7 @@ import { socials, bioData, experiences, projects } from './data';
 
 export function EasyView() {
     return (
-        <div style={{
+        <div id="easy-view-container" style={{
             position: 'absolute',
             top: 0,
             left: 0,
